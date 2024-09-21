@@ -1,4 +1,4 @@
-# Python Script Generator
+# Python Script Generation Demo
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://github.com/user-attachments/assets/25de3c9a-d73a-4200-8ac8-d6a2416e6e3d" style="width: 400px; height: auto; margin-right: 20px;" />
   <img src="https://github.com/user-attachments/assets/4069bf44-a6f3-4eac-922f-b1df086a69dd" style="width: 400px; height: auto;" />
