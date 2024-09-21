@@ -2,6 +2,7 @@ import streamlit as st
 from mitosheet.streamlit.v1 import spreadsheet
 import pandas as pd
 import openpyxl
+import io
 
 st.set_page_config(
     page_title="MitoSheet Script Generator Demo",
@@ -79,8 +80,26 @@ if uploaded_files:
             # Call the function spreadsheet() if it exists and process the df
             new_dfs, code = spreadsheet(df)
             
-            st.write(f"Data from {uploaded_file.name}:")
-            st.write(new_dfs)
+            st.write(f"Code Generated")
             st.code(code)
+            
+
+            # Check if new_dfs is a dictionary and process accordingly
+            if isinstance(new_dfs, dict):
+                st.write(f"Final Output")
+                for key, df_temp in new_dfs.items():
+                    st.write(f"DataFrame: {key}")
+                    st.write(df_temp)
+                    
+                    # Create a button to download the DataFrame as CSV
+                    csv = df_temp.to_csv(index=False)
+                    st.download_button(
+                        label=f"Download {key} as CSV",
+                        data=csv,
+                        file_name=f'{key}.csv',
+                        mime='text/csv'
+                    )
+            else:
+                st.info("Interact with the spreadsheet to see code output")
 else:
     st.info("Awaiting file upload. Supported formats: CSV, TXT, XLSX, Parquet.")
