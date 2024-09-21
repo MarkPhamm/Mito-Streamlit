@@ -4,10 +4,10 @@ import pandas as pd
 import openpyxl
 
 st.set_page_config(layout="wide")
-st.title('Script Generation Demo')
+st.title('Python Script Generator Demo')
 
 st.markdown("""
-This app allows you to **manipulate any data** through an intuitive interface and **outputs the corresponding Python scripts** as you go. After importing your data, interact with the spreadsheet as if you’re using Excel, and the app will record your transformation steps, generating the corresponding Python code.
+This app allows you to **manipulate any data** through an intuitive Excel interface and **outputs the corresponding Python scripts** as you go. After importing your data, interact with the spreadsheet as if you’re using Excel, and the app will record your transformation steps, generating the corresponding Python code.
 
 To use the app, follow these steps:
 1. Import your data into Streamlit  
