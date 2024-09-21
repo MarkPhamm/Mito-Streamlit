@@ -4,7 +4,7 @@
   <img src="https://github.com/user-attachments/assets/4069bf44-a6f3-4eac-922f-b1df086a69dd" style="width: 400px; height: auto;" />
 </div>
 
-**Try the deployed app [here]([https://mito-data-cleaning-demo.streamlit.app/](https://mito-script-generator-demo.streamlit.app/))**
+**Try the deployed app [here](https://mito-script-generator-demo.streamlit.app/)**
 
 Welcome to the **Python Script Generator Demo**! This app simplifies data manipulation by allowing you to interact with your data through an Excel-like interface while generating Python scripts based on your actions.
 
