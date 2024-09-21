@@ -3,7 +3,16 @@ from mitosheet.streamlit.v1 import spreadsheet
 import pandas as pd
 import openpyxl
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="MitoSheet Script Generator Demo",
+    initial_sidebar_state="expanded",
+    layout= "wide",
+    menu_items={
+        'Get Help': 'https://docs.trymito.io/',
+        'Report a bug': "https://docs.trymito.io/",
+        'About': "# This is a Streamlit - MitoSheet App that let you manipulate Pandas Dataframe with an Excel Interface"
+    }
+)
 st.title('Python Script Generator Demo')
 
 st.markdown("""
